@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Aniversário Lara 💖</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    animation: fadeIn 3s ease-in-out;
+}
+
+h1 {
+    font-size: 3rem;
+    background: linear-gradient(45deg, #ff4e50, #f9d423);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 2s infinite alternate;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+.heart {
+    font-size: 3rem;
+    animation: heartbeat 1.2s infinite;
+}
+
+button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background: #ff4e50;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #f9d423;
+    transform: scale(1.1);
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ff4e50; }
+    to { text-shadow: 0 0 25px #f9d423; }
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    40% { transform: scale(1); }
+    60% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estrelas */
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+    from { opacity: 0.2; }
+    to { opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Feliz Aniversário, para 💖</h1>
+    <h2>A garota mais bela de todos os tempos</h2>
+    <div class="heart">❤️</div>
+    <button onclick="mensagem()">Clique aqui</button>
+</div>
+
+<script>
+function mensagem() {
+    alert("Lara, você não é só a mais bela... você é a mais especial, a mais incrível e
